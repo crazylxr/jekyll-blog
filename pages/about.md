@@ -14,7 +14,7 @@ permalink: /pages/about.html
 	写博客的目的很单纯，就是记笔记，方便在不同终端上随时查看，偶尔也会记录身边发生的事情。
 	</p>
 	<br>
-	
+
 	<h3><i class="fa fa-laptop"></i>&nbsp;IT技能</h3>
 	<hr>
 	<br>
@@ -35,7 +35,7 @@ permalink: /pages/about.html
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
-		
+
         <div class="skillbar clearfix" data-percent="60%">
             <div class="skillbar-title"><span>java script</span></div>
             <div class="skillbar-bar"></div>
@@ -47,31 +47,31 @@ permalink: /pages/about.html
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
-		
+
 		<div class="skillbar clearfix" data-percent="60%">
             <div class="skillbar-title"><span>CSS</span></div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
 		-->
-    </div>	
+    </div>
 
-	
+
 	<br>
 	<h3><i class="fa fa-user"></i>&nbsp;基本信息</h3>
 	<hr>
 	<table class="table table-striped">
 		<tr>
 			<td>姓  名：</td>    
-			<td>高  扬 （1991）</td>
+			<td>李  剑（1996）</td>
 		</tr>
 		<tr>
 			<td>学  历：</td>    
-			<td>研究生</td>
+			<td>本科生</td>
 		</tr>
 		<tr>
 			<td>学  校：</td>    
-			<td>南京大学计算机科学技术系</td>
+			<td>重庆理工大学软件工程</td>
 		</tr>
 	</table>
 
@@ -84,7 +84,7 @@ permalink: /pages/about.html
 				Email：
 			</td>  
 			<td>
-				gycoderhh@gmail.com			
+				1076629390@qq.com			
 			</td>
 		</tr>
 
@@ -100,10 +100,10 @@ permalink: /pages/about.html
 		<tr>
 			<td>
 				微博：
-			</td> 
+			</td>
 			<td>
 				<a href="{{ site.author.weibo }}" target="_blank">weibo.com/u/2344559062</a>
-			</td> 
+			</td>
 		</tr>
 	</table>
 
@@ -113,7 +113,7 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	在校学生，一只码农，喜欢跑步，经常游泳，立志要为彰显码农正面形象做出贡献。
+	在校学生，一只码农，喜欢跑步，打篮球，立志要为彰显码农正面形象做出贡献。
 	</p>
 	<br>
 
@@ -124,7 +124,7 @@ permalink: /pages/about.html
 	世界这么大 到处去看看
 	</p>
 	<br>
-	<br> 
+	<br>
 	<br>
 
 </div>
@@ -133,4 +133,3 @@ permalink: /pages/about.html
 <div>
 {% include duoshuo.html %}
 </div>
-
