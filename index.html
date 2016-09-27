@@ -24,7 +24,7 @@ layout: default
 					</span>
 					{% endif %}
 				</div>
-				<div class="contentAbstract">{{ post.excerpt }}</div>				
+				<div class="contentAbstract">{{ post.excerpt }}</div>
 			</div>
 			<a href="{{ post.url | prepend: site.baseurl }}"  class="readmore pjaxlink">Read More <i class="glyphicon glyphicon-chevron-right"></i></a>
 		</div>
@@ -33,13 +33,13 @@ layout: default
 
 	{% if paginator.total_pages > 1 %}
 		<div class="pagination center">
-		
+
 			  <a class="pjaxlink" href="/index.html"><span class="x1" style="margin-left:5px;">首页</span></a>
 			  {% if paginator.previous_page %}
 			    <a class="pjaxlink"  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="x1" style="margin-right:5px;"><i class="glyphicon glyphicon-chevron-left"></i></span></a>
 			  {% endif %}
-			  
-			 {% assign curr_page_num = paginator.page %} 
+
+			 {% assign curr_page_num = paginator.page %}
     			 {% if curr_page_num < 3 or curr_page_num == 3 %}
         			{% assign startPage = 1 %}
         			{% assign endPage = 5 %}
@@ -48,17 +48,17 @@ layout: default
         			{% assign endPage = paginator.total_pages %}
       		  {% else %}
       		       {% assign startPage = curr_page_num | minus:2 %}
-       		  	{% assign endPage = curr_page_num | plus:2 %}		  
+       		  	{% assign endPage = curr_page_num | plus:2 %}
       		  {% endif %}
-      		  
-        		  {% if startPage < 1 %}	
-			  	{% assign startPage= 1 %} 
-			  {% endif %}     	
-			  	  
-      		  {% if endPage > paginator.total_pages %}	
-			  	{% assign endPage = paginator.total_pages %} 
-			  {% endif %} 
-			  
+
+        		  {% if startPage < 1 %}
+			  	{% assign startPage= 1 %}
+			  {% endif %}
+
+      		  {% if endPage > paginator.total_pages %}
+			  	{% assign endPage = paginator.total_pages %}
+			  {% endif %}
+
 			  {% for page in (startPage..endPage) %}
 				    {% if page == paginator.page %}
 				      <span class="active_page x1">{{ page }}</span>
@@ -72,12 +72,12 @@ layout: default
 			  {% if paginator.next_page %}
 			   	 <a class="pjaxlink" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="x1" style="margin-left:5px;"><i class="glyphicon glyphicon-chevron-right"></i></span></a>
 			  {% endif %}
-			  <a class="pjaxlink" href="/page{{paginator.total_pages}}/"><span class="x1" style="margin-left:5px;">末页</span></a>			  
+			  <a class="pjaxlink" href="/page{{paginator.total_pages}}/"><span class="x1" style="margin-left:5px;">末页</span></a>
 			  <span  style="margin-left:5px;">第{{paginator.page}}页 / 共{{paginator.total_pages}}页</span>
 		</div>
 	{% endif %}
 
-<!--
+
 	<div class="pagination">
 	  {% if paginator.previous_page %}
 	    {% if paginator.page == 2 %}
@@ -108,7 +108,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
---> 
+
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
