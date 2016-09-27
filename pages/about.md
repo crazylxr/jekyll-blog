@@ -23,7 +23,7 @@ permalink: /pages/about.html
 
 
 
-    <!--
+    
         <div class="skillbar clearfix" data-percent="80%">
             <div class="skillbar-title"><span>Java</span></div>
             <div class="skillbar-bar"></div>
@@ -53,7 +53,7 @@ permalink: /pages/about.html
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent">60%</div>
         </div>
-		-->
+
     </div>
 
 
