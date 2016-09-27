@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>萧然自我</title>
+    <link>http://crazylxr.github.io/</link>
+    <description>一不小心迈入计算机行业，在程序猿的道路上艰难地前行，目标是成 为一名优秀的全栈工程师或者说资深码农。对很多东西都充满兴趣， 跑步游泳，近期目标是能跑半程马拉松，学会自由泳。</description>
+    
+      <item>
+        <title>从0开始学习GitHub系列</title>
+        <link>http://crazylxr.github.io//2016/09/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0github%E7%B3%BB%E5%88%97.html</link>
+        <guid isPermaLink="true">http://crazylxr.github.io//2016/09/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0github%E7%B3%BB%E5%88%97.html</guid>
+        <pubDate>Mon, 05 Sep 2016 00:00:00 +0800</pubDate>
+        <description>&lt;h1 id=&quot;github&quot;&gt;从0开始学习GitHub系列&lt;/h1&gt;
+
+&lt;h2 id=&quot;githubstormzhanggithttpwwwliaoxuefengcomwiki0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;现在github非常的流行，故我寻找了很多资料。这一篇也不是我写的，都是别人（stormzhang）写的，我整合成一篇的。另外一篇就是&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;廖雪峰的git教程&lt;/a&gt;也非常的有用，供大家参考。&lt;/h2&gt;
+
+&lt;h2 id=&quot;stromzhang&quot;&gt;StromZhang教程参考：&lt;/h2&gt;
+
+&lt;h2 id=&quot;githubhttpmpweixinqqcomsbizmjm5mda2mti1mamid2649083575idx2sncab7249d132f43b9e61b9569c26e759cscene23srcid0624jkhib7vcv3izsdbuwdcird&quot;&gt;1.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083575&amp;amp;idx=2&amp;amp;sn=cab7249d132f43b9e61b9569c26e759c&amp;amp;scene=23&amp;amp;srcid=0624jKhib7vCV3izSdbuwDci#rd&quot;&gt;初始GitHub&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;2.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083575&amp;amp;idx=3&amp;amp;sn=472e8bdab763736f4bc9ab191a7dba4e&amp;amp;scene=23&amp;amp;srcid=062414dwhZQl0rFBGcoXAypd#rd&quot;&gt;加入GitHub&lt;/a&gt;
+—
+3.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083589&amp;amp;idx=1&amp;amp;sn=17844e55ca2682895ab18f480d0747bc&amp;amp;scene=23&amp;amp;srcid=0624pzEcEjN3Rs6SJyHlwWrn#rd&quot;&gt;Git速成&lt;/a&gt;
+—
+4.&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083597&amp;amp;idx=1&amp;amp;sn=8ccbd355c9084a41c3e99ca81ca7be49&amp;amp;scene=0&amp;amp;key=77421cf58af4a653d327b5a00183656c81c2b50b1482485bc4c4400f0dcc82a6e8bcec8b6022b92027432506801050f9&amp;amp;ascene=7&amp;amp;uin=Mzk2Mjc2MTU1&amp;amp;devicetype=iPhone+OS9.3.2&amp;amp;version=16031510&amp;amp;nettype=3G+&amp;amp;fontScale=100&amp;amp;pass_ticket=A3HVEI86duQTQiqE0dorQN9Bk2VAbajx82U1IJWPPglZfUrVfBTRiJtXDElWloBx&quot;&gt;向GitHub提交代码&lt;/a&gt;
+—
+5.&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083608&amp;amp;idx=1&amp;amp;sn=cd6a7fac541cf48f8302000155c37c64&amp;amp;scene=0&amp;amp;key=77421cf58af4a653c44d13ddd26883e9d7f4ecbfa57ca5d5e9b03315f7d58fb8f1fb5f259909a3c70050a5c9960c7147&amp;amp;ascene=7&amp;amp;uin=Mzk2Mjc2MTU1&amp;amp;devicetype=iPhone+OS9.3.2&amp;amp;version=16031510&amp;amp;nettype=3G+&amp;amp;fontScale=100&amp;amp;pass_ticket=A3HVEI86duQTQiqE0dorQN9Bk2VAbajx82U1IJWPPglZfUrVfBTRiJtXDElWloBx&quot;&gt;Git进阶&lt;/a&gt;
+—&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>SolrCloud的单机伪分布式环境搭建</title>
+        <link>http://crazylxr.github.io//2015/04/18/solr-SolrCloud.html</link>
+        <guid isPermaLink="true">http://crazylxr.github.io//2015/04/18/solr-SolrCloud.html</guid>
+        <pubDate>Sat, 18 Apr 2015 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;在项目中，我主要负责Solr这一块，为了便于在单机上进行调试，今天在我的电脑上搭建一个SolrCloud单机伪分布式环境。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;用到的软件&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;本文中是根据如下软件搭建的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;apache-tomcat-8.0.14.tar.gz&lt;/li&gt;
+  &lt;li&gt;solr-4.10.1.zip&lt;/li&gt;
+  &lt;li&gt;zookeeper-3.4.6.tar.gz&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;网盘下载地址 &lt;a href=&quot;http://pan.baidu.com/s/1dDB4mop&quot;&gt;点这里&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;搭建过程&lt;/h2&gt;
+
+&lt;p&gt;在/usr/local下新建目录 SolrCloud&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir SolrCloud
+cd SolrCloud
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;tomcat&quot;&gt;多tomcat&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;由于是用不同的端口号模拟不同的机器，因此需要多个tomcat&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;将apache-tomcat-8.0.14.tar.gz拷贝到SolrCloud目录下，并解压&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar zxvf apache-tomcat-8.0.14.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重命名为 tomcat_server_8080&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mv apache-tomcat-8.0.14 tomcat_server_8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;把 tomcat_server_8080复制三份，分别命名为tomcat_server_8081、tomcat_server_8082、tomcat_server_8083，后面的8080，8081，8082，8083是我准备用的tomcat的端口号。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cp -r tomcat_server_8080 tomcat_server_8081
+cp -r tomcat_server_8080 tomcat_server_8082
+cp -r tomcat_server_8080 tomcat_server_8083
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;配置端口：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    tomcat           http端口   https端口   关闭指令端口   Ajp端口
+tomcat_server_8080	  8080        8443        8005         8009
+tomcat_server_8081	  8081        8444        8006         8010
+tomcat_server_8082	  8082        8445        8007         8011
+tomcat_server_8083	  8083        8446        8008         8012
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;修改 tomcat-server_*/conf/server.xml 进行配置，以tomcat_server_8080/conf/server.xml为例，其它按照此配置进行配置即可。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;Server port=&quot;8005&quot; shutdown=&quot;SHUTDOWN&quot;&amp;gt;  //接受服务器关闭指令的端口号，关闭指令端口.
+
+
+&amp;lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;
+
+  connectionTimeout=&quot;20000&quot;
+
+  redirectPort=&quot;8443&quot; /&amp;gt;
+//http请求处理端口，我们在网页上输入的普通url地址包含的端口就是他 .这个端口叫http端口.
+
+
+&amp;lt;Connector port=&quot;8009&quot; protocol=&quot;AJP/1.3&quot; redirectPort=&quot;8443&quot; /&amp;gt;
+
+//接收AJP协议的处理端口.这个端口叫ajp端口.
+
+redirectPort=&quot;8443&quot; //https请求的处理端口.这个端口叫https端口.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;solrhome&quot;&gt;多solrhome&lt;/h3&gt;
+
+&lt;p&gt;将 solr-4.10.1.zip 拷贝到SolrCloud目录下，并解压&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;unzip solr-4.10.1.zip
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将 solr-4.10.1 中/example/solr 拷贝到SolrCloud目录下，并重命名为solr_home_1&lt;/p&gt;
+
+&lt;p&gt;把solr_home_1复制三份，分别命名为 solr_home_2、solr_home_3、solr_home_4&lt;/p&gt;
+
+&lt;p&gt;此时SolrCloud下文件形式如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_1
+drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:11 solr_home_2
+drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_3
+drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_4
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 09:59 tomcat_server_8080
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8081
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8082
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8083
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;把solr-4.10.1/example/webapps/solr.war复制到tomcat-server_*（8080-8083）/webapps目录下。&lt;/p&gt;
+
+&lt;p&gt;1、配置 solrhome:&lt;/p&gt;
+
+&lt;p&gt;在tomcat-server_*（8080-8083）/conf/Catalina/localhost 下创建文件solr.xml，并填入以下内容：（以tomcat-server_8080为例，其余类推）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&amp;gt;
+&amp;lt;Context docBase=&quot;/usr/local/SolrCloud/tomcat_server_8080/webapps/solr.war&quot; debug=&quot;0&quot; crossContext=&quot;true&quot; &amp;gt;
+  &amp;lt;Environment name=&quot;solr/home&quot; type=&quot;java.lang.String&quot; value=&quot;/usr/local/SolrCloud/solr_home_1&quot; override=&quot;true&quot; /&amp;gt;
+&amp;lt;/Context&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2、配置datadir:&lt;/p&gt;
+
+&lt;p&gt;以solr_home_1为例，其余类推。&lt;/p&gt;
+
+&lt;p&gt;首先在solr_home_1下创建data文件夹。此data就是存储索引的文件夹。&lt;/p&gt;
+
+&lt;p&gt;编辑 /usr/local/SolrCloud/solr_home_1/collection1/conf/solrconfig.xml 中的 dataDir 配置项。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;dataDir&amp;gt;${solr.data.dir:/usr/local/SolrCloud/solr_home_1/data}&amp;lt;/dataDir&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3、将solr-4.10.1/example/lib/ext下的jar包放到tomcat-server_*（8080-8083）/webapps/solr/WEB-INF/lib下。&lt;/p&gt;
+
+&lt;p&gt;4、启动四个tomcat&lt;/p&gt;
+
+&lt;p&gt;tomcat-server_*（8080-8083）/bin下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./startup.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在浏览中中分别打开&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://localhost:8080/solr
+http://localhost:8081/solr
+http://localhost:8082/solr
+http://localhost:8083/solr
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果都能正常访问到solr的admin页面，那么说明配置是成功的。否则就需要检查哪里错了或者遗漏了。（这四个是独立的，此时没有cloud）&lt;/p&gt;
+
+&lt;h3 id=&quot;zookeeper&quot;&gt;zookeeper配置&lt;/h3&gt;
+
+&lt;p&gt;将 zookeeper-3.4.6.tar.gz 拷贝到SolrCloud目录下，解压&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar zxvf zookeeper-3.4.6.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;并重命名为 zookeeper_server_1,把 zookeeper_server_1复制两份，分别命名为zookeeper_server_2、zookeeper_server_3。（这类需要注意的是zookeeper必须配置为奇数个，否则在选举算法中无法选出leader）&lt;/p&gt;
+
+&lt;p&gt;在 /usr/local/SolrCloud/zookeeper_server_* 下建立文件夹data和logs
+（下面仅以zookeeper_server_1为例，其余类推）&lt;/p&gt;
+
+&lt;p&gt;1、将zookeeper_server_1/conf下zoo_sample.cfg文件名改为zoo.cfg 并修改zoo.cfg文件.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tickTime=2000
+initLimit=10
+syncLimit=5
+dataDir=/usr/local/SolrCloud/zookeeper_server_1/data
+dataLogDir=/usr/local/SolrCloud/zookeeper_server_1/logs
+clientPort=2181
+
+server.1=127.0.0.1:2888:3888
+server.2=127.0.0.1:2889:3889
+server.3=127.0.0.1:2890:3890
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在 /usr/local/SolrCloud/zookeeper_server_1 下&lt;/p&gt;
+
+&lt;p&gt;clientPort对应如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;zookeeper_server_1      2181
+zookeeper_server_2      2182
+zookeeper_server_3      2183
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;tickTime：这个时间是作为 Zookeeper 服务器之间或客户端与服务器之间维持心跳的时间间隔，也就是每个 tickTime 时间就会发送一个心跳。&lt;/li&gt;
+  &lt;li&gt;initLimit：这个配置项是用来配置 Zookeeper 接受客户端（这里所说的客户端不是用户连接 Zookeeper 服务器的客户端，而是 Zookeeper服务器集群中连接到 Leader 的&lt;/li&gt;
+  &lt;li&gt;Follower 服务器）初始化连接时最长能忍受多少个心跳时间间隔数。当已经超过 10 个心跳的时间（也就是tickTime）长度后 Zookeeper 服务器还没有收到客户端的返回信息，那么表明这个客户端连接失败。总的时间长度就是5*2000=10秒。&lt;/li&gt;
+  &lt;li&gt;syncLimit：这个配置项标识 Leader 与 Follower 之间发送消息，请求和应答时间长度，最长不能超过多少个 tickTime 的时间长度，总的时间长度就是 2*2000=4 秒&lt;/li&gt;
+  &lt;li&gt;dataDir：顾名思义就是 Zookeeper 保存数据的目录，默认情况下，Zookeeper 将写数据的日志文件也保存在这个目录里。&lt;/li&gt;
+  &lt;li&gt;dataLogDir： Zookeeper的日志文件位置。&lt;/li&gt;
+  &lt;li&gt;server.A=B：C：D：其中 A 是一个数字，表示这个是第几号服务器；B是这个服务器的 ip 地址；C 表示的是这个服务器与集群中的 Leader服务器交换信息的端口；D 表示的是万一集群中的 Leader 服务器挂了，需要一个端口来重新进行选举，选出一个新的 Leader，而这个端口就是用来执行选举时服务器相互通信的端口。如果是伪集群的配置方式，由于 B 都是一样，所以不同的 Zookeeper 实例通信端口号不能一样，所以要给它们分配不同的端口号。&lt;/li&gt;
+  &lt;li&gt;clientPort：这个端口就是客户端连接 Zookeeper 服务器的端口，Zookeeper 会监听这个端口，接受客户端的访问请求。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在三个data目录下的新建myid文件（没有后缀），修改其中的内容。zookeeper_server_1是1， zookeeper_server_2是2，zookeeper_server_3是3 。只有一行。&lt;/p&gt;
+
+&lt;p&gt;配置完成后依次启动：依次输入如下指令（以zookeeper_server_1为例）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gaoyang@master:cd /usr/local/SolrCloud/zookeeper_server_1/bin
+gaoyang@master:/usr/local/SolrCloud/zookeeper_server_1/bin$ ./zkServer.sh 
+JMX enabled by default
+Using config: /usr/local/SolrCloud/zookeeper_server_1/bin/../conf/zoo.cfg
+Usage: ./zkServer.sh {start|start-foreground|stop|restart|status|upgrade|print-cmd}
+gaoyang@master:/usr/local/SolrCloud/zookeeper_server_2/bin$ ./zkServer.sh start
+JMX enabled by default
+Using config: /usr/local/SolrCloud/zookeeper_server_2/bin/../conf/zoo.cfg
+Starting zookeeper ... STARTED
+gaoyang@master:/usr/local/SolrCloud/zookeeper_server_2/bin$ ./zkServer.sh status
+JMX enabled by default
+Using config: /usr/local/SolrCloud/zookeeper_server_2/bin/../conf/zoo.cfg
+Mode: leader
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以看到zookeeper_server_1被选为leader 其它两个为follower。&lt;/p&gt;
+
+&lt;p&gt;另外，可以通过客户端脚本，连接到ZooKeeper集群上。对于客户端来说，ZooKeeper是一个整体（ensemble），
+连接到ZooKeeper集群实际上感觉在独享整个集群的服务，所以，你可以在任何一个结点上建立到服务集群的连接。&lt;/p&gt;
+
+&lt;h2 id=&quot;tomcatsolrzookeeper&quot;&gt;Tomcat+solr+zookeeper集群&lt;/h2&gt;
+
+&lt;p&gt;以上都没问题之后，需要把tomcat+solr+zookeeper集成起来。&lt;/p&gt;
+
+&lt;p&gt;1、修改tomcat/bin/cataina.sh，在最上方加入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;JAVA_OPTS=&quot;-DzkHost=127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;加入以上内容其实就是指明了zookeeper集群所在位置。&lt;/p&gt;
+
+&lt;p&gt;2、 在/usr/local/SolrCloud目录下创建 solrConfig-files目录和solrLib-Files目录。&lt;/p&gt;
+
+&lt;p&gt;3、 在/usr/local/SolrCloud/solrConfig-files目录下放置solr-4.10.1/example/solr/collection1/conf 下的所有文件。&lt;/p&gt;
+
+&lt;p&gt;4、 在目录/usr/local/SolrCloud/solrLib-Files目录下放置tomcat_server_1/webapps/solr/WEB-INF/lib下的所有jar包。&lt;/p&gt;
+
+&lt;p&gt;5、 SolrCloud是通过ZooKeeper集群来保证配置文件的变更及时同步到各个节点上，所以，需要将配置文件上传到ZooKeeper集群中：执行如下操作&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd upconfig -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 -confdir /usr/local/SolrCloud/solrConfig-files/ -confname myconf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接下来把collection中的内容链接到zookeeper中的配置：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd linkconfig -collection collection1 -confname myconf -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5、配置solr_home_1下的solr.xml（其余类推，solr_home_2修改为8081，solr_home_3修改为8082，solr_home_4修改为8083）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;int name=&quot;hostPort&quot;&amp;gt;${jetty.port:8983}&amp;lt;/int&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将8983修改为8080&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;int name=&quot;hostPort&quot;&amp;gt;${jetty.port:8080}&amp;lt;/int&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6、依次启动三个zookeeper_server和四个tomcat_server&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://localhost:8080/solr/#/~cloud
+http://localhost:8081/solr/#/~cloud
+http://localhost:8082/solr/#/~cloud
+http://localhost:8083/solr/#/~cloud
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;得到的页面都是一样的。一个collection有一个分片，这个分片有四个备份。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogimg/SolrCloud.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;collectionshardreplication&quot;&gt;创建Collection、Shard和Replication&lt;/h2&gt;
+
+&lt;p&gt;创建Collection及初始Shard，可以通过REST接口来创建Collection&lt;/p&gt;
+
+&lt;p&gt;curl ‘http://127.0.0.1:8080/solr/admin/collections?action=CREATE&amp;amp;name=mycollection&amp;amp;numShards=2&amp;amp;replicationFactor=2’&lt;/p&gt;
+
+&lt;p&gt;也可在浏览器中直接输入，效果是一样的&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;name 就是	collection的名字&lt;/li&gt;
+  &lt;li&gt;numShards 是分片的个数&lt;/li&gt;
+  &lt;li&gt;replicationFactor  是每个分片的备份数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;至此，一个简单的solrcloud集群就搭建完毕了。&lt;/p&gt;
+
+</description>
+      </item>
+    
+  </channel>
+</rss>

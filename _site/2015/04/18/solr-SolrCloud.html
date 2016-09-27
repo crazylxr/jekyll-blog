@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>SolrCloud的单机伪分布式环境搭建 | 萧然自我</title>
+  <meta name="description" content="  在项目中，我主要负责Solr这一块，为了便于在单机上进行调试，今天在我的电脑上搭建一个SolrCloud单机伪分布式环境。">
+
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.css">
+  <link rel="stylesheet" href="/assets/js/fancybox/jquery.fancybox.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/main.css" >
+  <link rel="stylesheet" href="/assets/js/prettify/prettify.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.png" />
+  <link rel="canonical" href="http://crazylxr.github.io//2015/04/18/solr-SolrCloud.html">
+  <link rel="alternate" type="application/rss+xml" title="萧然自我" href="http://crazylxr.github.io//feed.xml" />
+  <script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+  <script type="text/javascript" src="/assets/js/embed.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="/assets/js/ua-parser.js"></script>
+  <script>var duoshuoQuery = {short_name:"dev"};</script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-default" role="navigation">
+			
+				    <div class="navbar-header col-xs-12 col-sm-12 col-md-3 col-lg-3 center" >
+				   	      <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse">
+					         <span class="icon-bar"></span>
+					         <span class="icon-bar"></span>
+					         <span class="icon-bar"></span>
+					      </button>
+					      <div class="sitehome">
+						 	<a href="/" title="首页"><i class="fa fa-home fa-2x homeicon"></i><a><a class="site-title" href="/">萧然自我</a>
+						</div>
+				   </div>
+				  
+				  
+				  <div class="col-md-6 col-lg-6 hidden-xs hidden-sm center">				  			
+							<nav class="site-nav">
+								        <ul class="nav nav-pills">
+											<li class="select"><a class="page-link pjaxlink" href="/pages/read.html">读书</a></li>
+											<li class="select"><a class="page-link pjaxlink" href="/pages/class.html">分类</a></li>
+											<li class="select"><a class="page-link pjaxlink" href="/pages/archive.html">归档</a></li>
+											<li class="select"><a class="page-link pjaxlink" href="/pages/about.html">关于</a></li>
+								        </ul>
+							</nav>
+				  </div>
+				  
+				   <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+				   		<div class="search">
+						  	<input type="text" class="search-query st-default-search-input" placeholder="Search">
+				   		</div>
+				   </div>
+				   
+				   
+				   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav phone-nav center">
+							<li class="phoneselect"><a class="page-link pjaxlink" href="/"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+							<li class="phoneselect"><a class="page-link pjaxlink" href="/pages/read.html"><i class="fa fa-book"></i>&nbsp;读书</a></li>
+							<li class="phoneselect"><a class="page-link pjaxlink" href="/pages/class.html"><i class="fa fa-tasks"></i>&nbsp;分类</a></li>
+							<li class="phoneselect"><a class="page-link pjaxlink" href="/pages/tags.html"><i class="fa fa-tags"></i>&nbsp;标签</a></li>
+							<li class="phoneselect"><a class="page-link pjaxlink" href="/pages/archive.html"><i class="fa fa-archive"></i>&nbsp;归档</a></li>
+							<li class="phoneselect"><a class="page-link pjaxlink" href="/pages/about.html"><i class="fa fa-user"></i>&nbsp;关于</a></li>
+						</ul>
+				   </div>
+				   
+			</nav>
+		</div>
+	</div>
+</header>
+
+
+    <div class="content">
+   	<div class="container">
+   		<div class="row">
+
+			<div class="col-md-3 col-lg-3 hidden-xs hidden-sm aside1 fadein-left">
+				<div class="profile box-shadow center">
+					<div class="overlay"></div>
+					<div class="center gavatar">
+						<a href="/" class="profile_gavatar"><img class="circle" src="/assets/img/gavatar.png"></a>
+					</div>
+					<div class="address">
+						<h5><span class="fa fa-map-marker"></span> NanJing JiangSu, China</h5>
+					</div>
+					<div class="center profile_desc">
+						当任何时候觉得累<br>你的大脑就在进化<br> 当任何时候觉得轻松<br>你都在使用你的习惯<br>
+					</div>
+				</div>
+
+				<div class="tag-cloud-text">
+					<a href="http://crazylxr.github.io/pages/tags.html" title="标签" class="pjaxlink"><p class="center">标签</p></a>
+				</div>
+				<div class="tag-cloud ">
+					<hr>
+					<div class="page-tag">
+							
+								<a href="http://crazylxr.github.io/pages/tags.html#Solr" name="Solr" class="pjaxlink"><i class="fa fa-tags"></i>Solr(1)</a>
+							
+								<a href="http://crazylxr.github.io/pages/tags.html#github" name="github" class="pjaxlink"><i class="fa fa-tags"></i>github(1)</a>
+							
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="recentcome box-shadow">
+	 				<p>最近访客 <i class="fa fa-user"></i></p>
+	 				<ul class="ds-recent-visitors" data-num-items="15"></ul>
+	 			</div>
+	 			<div class="comment box-shadow">
+	 				<p>最新评论 <i class="fa fa-comments"></i></p>
+	 				<dl class="ds-recent-comments"  data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1"  data-show-admin="1" data-excerpt-length="50"></dl>
+	 			</div>
+
+
+	 			<div class="recentuse">
+	 					<p>常用链接</p>
+	 					<hr>
+	 					<ul>
+		 					<li><a href = "http://cqut.edu.cn/">重庆理工大学</a></li>
+		 					<li><a href = "https://github.com/">github主页</a></li>
+	 					</ul>
+	 			</div>
+
+				<div class="friendlink">
+	 					<p>友情链接</p>
+	 					<hr>
+		 				<a href = "http://www.jcore.cn/">jcore</a>
+	 			</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 box-shadow fadein-right aside2">
+					<div class="page-content" id="pjax"><div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">SolrCloud的单机伪分布式环境搭建</h1>
+    <div class="info">
+	    <p class="post-meta"><i class="fa fa-calendar"></i>&nbsp;2015-04-18</p>
+	    
+		<i class="fa fa-tags"></i>
+		<span class="index-post-tag">
+		
+			<a class="pjaxlink" href="/pages/tags.html#Solr">Solr</a>
+		
+		</span>
+	    
+    </div>
+  </header>
+
+  <article class="post-content">
+    <blockquote>
+  <p>在项目中，我主要负责Solr这一块，为了便于在单机上进行调试，今天在我的电脑上搭建一个SolrCloud单机伪分布式环境。</p>
+</blockquote>
+
+<h2 id="section">用到的软件</h2>
+
+<blockquote>
+  <p>本文中是根据如下软件搭建的。</p>
+</blockquote>
+
+<ul>
+  <li>apache-tomcat-8.0.14.tar.gz</li>
+  <li>solr-4.10.1.zip</li>
+  <li>zookeeper-3.4.6.tar.gz</li>
+</ul>
+
+<p>网盘下载地址 <a href="http://pan.baidu.com/s/1dDB4mop">点这里</a></p>
+
+<h2 id="section-1">搭建过程</h2>
+
+<p>在/usr/local下新建目录 SolrCloud</p>
+
+<pre><code>mkdir SolrCloud
+cd SolrCloud
+</code></pre>
+
+<h3 id="tomcat">多tomcat</h3>
+
+<blockquote>
+  <p>由于是用不同的端口号模拟不同的机器，因此需要多个tomcat</p>
+</blockquote>
+
+<p>将apache-tomcat-8.0.14.tar.gz拷贝到SolrCloud目录下，并解压</p>
+
+<pre><code>tar zxvf apache-tomcat-8.0.14.tar.gz
+</code></pre>
+
+<p>重命名为 tomcat_server_8080</p>
+
+<pre><code>mv apache-tomcat-8.0.14 tomcat_server_8080
+</code></pre>
+
+<p>把 tomcat_server_8080复制三份，分别命名为tomcat_server_8081、tomcat_server_8082、tomcat_server_8083，后面的8080，8081，8082，8083是我准备用的tomcat的端口号。</p>
+
+<pre><code>cp -r tomcat_server_8080 tomcat_server_8081
+cp -r tomcat_server_8080 tomcat_server_8082
+cp -r tomcat_server_8080 tomcat_server_8083
+</code></pre>
+
+<p>配置端口：</p>
+
+<pre><code>    tomcat           http端口   https端口   关闭指令端口   Ajp端口
+tomcat_server_8080	  8080        8443        8005         8009
+tomcat_server_8081	  8081        8444        8006         8010
+tomcat_server_8082	  8082        8445        8007         8011
+tomcat_server_8083	  8083        8446        8008         8012
+</code></pre>
+
+<p>修改 tomcat-server_*/conf/server.xml 进行配置，以tomcat_server_8080/conf/server.xml为例，其它按照此配置进行配置即可。</p>
+
+<pre><code>&lt;Server port="8005" shutdown="SHUTDOWN"&gt;  //接受服务器关闭指令的端口号，关闭指令端口.
+
+
+&lt;Connector port="8080" protocol="HTTP/1.1"
+
+  connectionTimeout="20000"
+
+  redirectPort="8443" /&gt;
+//http请求处理端口，我们在网页上输入的普通url地址包含的端口就是他 .这个端口叫http端口.
+
+
+&lt;Connector port="8009" protocol="AJP/1.3" redirectPort="8443" /&gt;
+
+//接收AJP协议的处理端口.这个端口叫ajp端口.
+
+redirectPort="8443" //https请求的处理端口.这个端口叫https端口.
+</code></pre>
+
+<h3 id="solrhome">多solrhome</h3>
+
+<p>将 solr-4.10.1.zip 拷贝到SolrCloud目录下，并解压</p>
+
+<pre><code>unzip solr-4.10.1.zip
+</code></pre>
+
+<p>将 solr-4.10.1 中/example/solr 拷贝到SolrCloud目录下，并重命名为solr_home_1</p>
+
+<p>把solr_home_1复制三份，分别命名为 solr_home_2、solr_home_3、solr_home_4</p>
+
+<p>此时SolrCloud下文件形式如下：</p>
+
+<pre><code>drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_1
+drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:11 solr_home_2
+drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_3
+drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_4
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 09:59 tomcat_server_8080
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8081
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8082
+drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8083
+</code></pre>
+
+<p>把solr-4.10.1/example/webapps/solr.war复制到tomcat-server_*（8080-8083）/webapps目录下。</p>
+
+<p>1、配置 solrhome:</p>
+
+<p>在tomcat-server_*（8080-8083）/conf/Catalina/localhost 下创建文件solr.xml，并填入以下内容：（以tomcat-server_8080为例，其余类推）</p>
+
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;Context docBase="/usr/local/SolrCloud/tomcat_server_8080/webapps/solr.war" debug="0" crossContext="true" &gt;
+  &lt;Environment name="solr/home" type="java.lang.String" value="/usr/local/SolrCloud/solr_home_1" override="true" /&gt;
+&lt;/Context&gt;
+</code></pre>
+
+<p>2、配置datadir:</p>
+
+<p>以solr_home_1为例，其余类推。</p>
+
+<p>首先在solr_home_1下创建data文件夹。此data就是存储索引的文件夹。</p>
+
+<p>编辑 /usr/local/SolrCloud/solr_home_1/collection1/conf/solrconfig.xml 中的 dataDir 配置项。</p>
+
+<pre><code>&lt;dataDir&gt;${solr.data.dir:/usr/local/SolrCloud/solr_home_1/data}&lt;/dataDir&gt;
+</code></pre>
+
+<p>3、将solr-4.10.1/example/lib/ext下的jar包放到tomcat-server_*（8080-8083）/webapps/solr/WEB-INF/lib下。</p>
+
+<p>4、启动四个tomcat</p>
+
+<p>tomcat-server_*（8080-8083）/bin下</p>
+
+<pre><code>./startup.sh
+</code></pre>
+
+<p>在浏览中中分别打开</p>
+
+<pre><code>http://localhost:8080/solr
+http://localhost:8081/solr
+http://localhost:8082/solr
+http://localhost:8083/solr
+</code></pre>
+
+<p>如果都能正常访问到solr的admin页面，那么说明配置是成功的。否则就需要检查哪里错了或者遗漏了。（这四个是独立的，此时没有cloud）</p>
+
+<h3 id="zookeeper">zookeeper配置</h3>
+
+<p>将 zookeeper-3.4.6.tar.gz 拷贝到SolrCloud目录下，解压</p>
+
+<pre><code>tar zxvf zookeeper-3.4.6.tar.gz
+</code></pre>
+
+<p>并重命名为 zookeeper_server_1,把 zookeeper_server_1复制两份，分别命名为zookeeper_server_2、zookeeper_server_3。（这类需要注意的是zookeeper必须配置为奇数个，否则在选举算法中无法选出leader）</p>
+
+<p>在 /usr/local/SolrCloud/zookeeper_server_* 下建立文件夹data和logs
+（下面仅以zookeeper_server_1为例，其余类推）</p>
+
+<p>1、将zookeeper_server_1/conf下zoo_sample.cfg文件名改为zoo.cfg 并修改zoo.cfg文件.</p>
+
+<pre><code>tickTime=2000
+initLimit=10
+syncLimit=5
+dataDir=/usr/local/SolrCloud/zookeeper_server_1/data
+dataLogDir=/usr/local/SolrCloud/zookeeper_server_1/logs
+clientPort=2181
+
+server.1=127.0.0.1:2888:3888
+server.2=127.0.0.1:2889:3889
+server.3=127.0.0.1:2890:3890
+</code></pre>
+
+<p>在 /usr/local/SolrCloud/zookeeper_server_1 下</p>
+
+<p>clientPort对应如下：</p>
+
+<pre><code>zookeeper_server_1      2181
+zookeeper_server_2      2182
+zookeeper_server_3      2183
+</code></pre>
+
+<ul>
+  <li>tickTime：这个时间是作为 Zookeeper 服务器之间或客户端与服务器之间维持心跳的时间间隔，也就是每个 tickTime 时间就会发送一个心跳。</li>
+  <li>initLimit：这个配置项是用来配置 Zookeeper 接受客户端（这里所说的客户端不是用户连接 Zookeeper 服务器的客户端，而是 Zookeeper服务器集群中连接到 Leader 的</li>
+  <li>Follower 服务器）初始化连接时最长能忍受多少个心跳时间间隔数。当已经超过 10 个心跳的时间（也就是tickTime）长度后 Zookeeper 服务器还没有收到客户端的返回信息，那么表明这个客户端连接失败。总的时间长度就是5*2000=10秒。</li>
+  <li>syncLimit：这个配置项标识 Leader 与 Follower 之间发送消息，请求和应答时间长度，最长不能超过多少个 tickTime 的时间长度，总的时间长度就是 2*2000=4 秒</li>
+  <li>dataDir：顾名思义就是 Zookeeper 保存数据的目录，默认情况下，Zookeeper 将写数据的日志文件也保存在这个目录里。</li>
+  <li>dataLogDir： Zookeeper的日志文件位置。</li>
+  <li>server.A=B：C：D：其中 A 是一个数字，表示这个是第几号服务器；B是这个服务器的 ip 地址；C 表示的是这个服务器与集群中的 Leader服务器交换信息的端口；D 表示的是万一集群中的 Leader 服务器挂了，需要一个端口来重新进行选举，选出一个新的 Leader，而这个端口就是用来执行选举时服务器相互通信的端口。如果是伪集群的配置方式，由于 B 都是一样，所以不同的 Zookeeper 实例通信端口号不能一样，所以要给它们分配不同的端口号。</li>
+  <li>clientPort：这个端口就是客户端连接 Zookeeper 服务器的端口，Zookeeper 会监听这个端口，接受客户端的访问请求。</li>
+</ul>
+
+<p>在三个data目录下的新建myid文件（没有后缀），修改其中的内容。zookeeper_server_1是1， zookeeper_server_2是2，zookeeper_server_3是3 。只有一行。</p>
+
+<p>配置完成后依次启动：依次输入如下指令（以zookeeper_server_1为例）</p>
+
+<pre><code>gaoyang@master:cd /usr/local/SolrCloud/zookeeper_server_1/bin
+gaoyang@master:/usr/local/SolrCloud/zookeeper_server_1/bin$ ./zkServer.sh 
+JMX enabled by default
+Using config: /usr/local/SolrCloud/zookeeper_server_1/bin/../conf/zoo.cfg
+Usage: ./zkServer.sh {start|start-foreground|stop|restart|status|upgrade|print-cmd}
+gaoyang@master:/usr/local/SolrCloud/zookeeper_server_2/bin$ ./zkServer.sh start
+JMX enabled by default
+Using config: /usr/local/SolrCloud/zookeeper_server_2/bin/../conf/zoo.cfg
+Starting zookeeper ... STARTED
+gaoyang@master:/usr/local/SolrCloud/zookeeper_server_2/bin$ ./zkServer.sh status
+JMX enabled by default
+Using config: /usr/local/SolrCloud/zookeeper_server_2/bin/../conf/zoo.cfg
+Mode: leader
+</code></pre>
+
+<p>可以看到zookeeper_server_1被选为leader 其它两个为follower。</p>
+
+<p>另外，可以通过客户端脚本，连接到ZooKeeper集群上。对于客户端来说，ZooKeeper是一个整体（ensemble），
+连接到ZooKeeper集群实际上感觉在独享整个集群的服务，所以，你可以在任何一个结点上建立到服务集群的连接。</p>
+
+<h2 id="tomcatsolrzookeeper">Tomcat+solr+zookeeper集群</h2>
+
+<p>以上都没问题之后，需要把tomcat+solr+zookeeper集成起来。</p>
+
+<p>1、修改tomcat/bin/cataina.sh，在最上方加入</p>
+
+<pre><code>JAVA_OPTS="-DzkHost=127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183"
+</code></pre>
+
+<p>加入以上内容其实就是指明了zookeeper集群所在位置。</p>
+
+<p>2、 在/usr/local/SolrCloud目录下创建 solrConfig-files目录和solrLib-Files目录。</p>
+
+<p>3、 在/usr/local/SolrCloud/solrConfig-files目录下放置solr-4.10.1/example/solr/collection1/conf 下的所有文件。</p>
+
+<p>4、 在目录/usr/local/SolrCloud/solrLib-Files目录下放置tomcat_server_1/webapps/solr/WEB-INF/lib下的所有jar包。</p>
+
+<p>5、 SolrCloud是通过ZooKeeper集群来保证配置文件的变更及时同步到各个节点上，所以，需要将配置文件上传到ZooKeeper集群中：执行如下操作</p>
+
+<pre><code>java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd upconfig -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 -confdir /usr/local/SolrCloud/solrConfig-files/ -confname myconf
+</code></pre>
+
+<p>接下来把collection中的内容链接到zookeeper中的配置：</p>
+
+<pre><code>java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd linkconfig -collection collection1 -confname myconf -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183  
+</code></pre>
+
+<p>5、配置solr_home_1下的solr.xml（其余类推，solr_home_2修改为8081，solr_home_3修改为8082，solr_home_4修改为8083）</p>
+
+<pre><code>&lt;int name="hostPort"&gt;${jetty.port:8983}&lt;/int&gt;
+</code></pre>
+
+<p>将8983修改为8080</p>
+
+<pre><code>&lt;int name="hostPort"&gt;${jetty.port:8080}&lt;/int&gt;
+</code></pre>
+
+<p>6、依次启动三个zookeeper_server和四个tomcat_server</p>
+
+<pre><code>http://localhost:8080/solr/#/~cloud
+http://localhost:8081/solr/#/~cloud
+http://localhost:8082/solr/#/~cloud
+http://localhost:8083/solr/#/~cloud
+</code></pre>
+
+<p>得到的页面都是一样的。一个collection有一个分片，这个分片有四个备份。</p>
+
+<p><img src="/assets/img/blogimg/SolrCloud.png" alt="" /></p>
+
+<h2 id="collectionshardreplication">创建Collection、Shard和Replication</h2>
+
+<p>创建Collection及初始Shard，可以通过REST接口来创建Collection</p>
+
+<p>curl ‘http://127.0.0.1:8080/solr/admin/collections?action=CREATE&amp;name=mycollection&amp;numShards=2&amp;replicationFactor=2’</p>
+
+<p>也可在浏览器中直接输入，效果是一样的</p>
+
+<ul>
+  <li>name 就是	collection的名字</li>
+  <li>numShards 是分片的个数</li>
+  <li>replicationFactor  是每个分片的备份数</li>
+</ul>
+
+<p>至此，一个简单的solrcloud集群就搭建完毕了。</p>
+
+
+  </article>
+</div>
+
+  <div class="prevandnext">
+    	  
+	    <div style="margin:0.5em;">
+	    <span>上一篇 ：</span><a class="pjaxlink" href="http://crazylxr.github.io//2016/09/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0github%E7%B3%BB%E5%88%97.html"  title="从0开始学习GitHub系列">从0开始学习GitHub系列</a>
+	    </div>
+	  
+  	  
+	  	<div style="margin:0.5em;">
+			<span> 版权所有，转载时必须以链接形式注明原始出处</span>
+	    </div>
+	 
+  </div>
+  
+  	<!-- 多说评论框 start -->
+   <div class="ds-thread"  data-title="SolrCloud的单机伪分布式环境搭建" data-url="http://crazylxr.github.io/2015/04/18/solr-SolrCloud.html" data-thread-key="/2015/04/18/solr-SolrCloud "></div>
+	<!-- 多说评论框 end -->
+</div>
+			</div>
+
+
+
+ 		</div>
+	</div>
+    </div>
+
+
+	<div class="profile_social">
+		<a class="rss" href="/feed.xml" target="_blank"></a>
+		<a class="github" href="https://github.com/crazylxr"  target="_blank"></a>
+		<a class="weibo" href=""  target="_blank"></a>
+	</div>
+
+    <div id="backtotop">
+    		<a href="#"><i class="fa fa-arrow-circle-up"></i></a>
+    </div>
+
+    <div class="pjax_loading"></div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">萧然自我's blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>萧然自我</li>
+          <li><a href="mailto:1076629390@qq.com">1076629390@qq.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a class="github" href="https://github.com/crazylxr"  target="_blank"></a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">一不小心迈入计算机行业，在程序猿的道路上艰难地前行，目标是成 为一名优秀的全栈工程师或者说资深码农。对很多东西都充满兴趣， 跑步游泳，近期目标是能跑半程马拉松，学会自由泳。</p>
+      </div>
+    </div>
+    <div class="center sitedesc">
+    	Powered by <a href ="http://jekyllrb.com/">Jekyll</a>  |  © 2015 GY  |  Hosted on <a href="https://github.com/crazylxr.github.io/crazylxr.github.io.github.io"> Github</a>
+    </div>
+  </div>
+	
+ 
+  <script type="text/javascript">
+	  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+	  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+	  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+	  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+	  
+	  _st('install','yeJZSeBF6XzYF_iNno8P','2.0.0');
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {equationNumbers: {
+            autoNumber: ["AMS"], useLabelIds: true}},
+            "HTML-CSS": {linebreaks: {automatic: true}},
+            SVG: {linebreaks: {automatic: true}}
+    });
+   </script>
+  	<!-- 多说公共JS代码 start (一个网页只需插入一次) 
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"maydaycoder"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	多说公共JS代码 end -->
+  <script type="text/javascript" src="/assets/js/jquery.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.pjax.js"></script> 
+  <script type="text/javascript" src="/assets/js/echarts.js"></script> 
+  <script type="text/javascript" src="/assets/js/prettify/prettify.js"></script>
+  <script type="text/javascript" src="/assets/js/stickUp.min.js"></script>
+  <script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/assets/js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <link rel="stylesheet" href="/assets/css/duoshuo.css"> 
+  
+</footer>
+
+
+  </body>
+
+</html>
