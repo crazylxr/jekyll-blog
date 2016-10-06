@@ -3,7 +3,7 @@ layout: post
 title: SolrCloud的单机伪分布式环境搭建
 category: 技术
 tags: Solr
-description: 
+description:
 ---
 
 
@@ -73,7 +73,7 @@ description:
 
 	redirectPort="8443" //https请求的处理端口.这个端口叫https端口.
 
-	
+
 
 ### 多solrhome
 
@@ -119,9 +119,9 @@ description:
 
 3、将solr-4.10.1/example/lib/ext下的jar包放到tomcat-server_*（8080-8083）/webapps/solr/WEB-INF/lib下。
 
-4、启动四个tomcat 
+4、启动四个tomcat
 
-tomcat-server_*（8080-8083）/bin下 
+tomcat-server_*（8080-8083）/bin下
 
 	./startup.sh
 
@@ -171,7 +171,7 @@ clientPort对应如下：
 	zookeeper_server_3      2183
 
 - tickTime：这个时间是作为 Zookeeper 服务器之间或客户端与服务器之间维持心跳的时间间隔，也就是每个 tickTime 时间就会发送一个心跳。
-- initLimit：这个配置项是用来配置 Zookeeper 接受客户端（这里所说的客户端不是用户连接 Zookeeper 服务器的客户端，而是 Zookeeper服务器集群中连接到 Leader 的 
+- initLimit：这个配置项是用来配置 Zookeeper 接受客户端（这里所说的客户端不是用户连接 Zookeeper 服务器的客户端，而是 Zookeeper服务器集群中连接到 Leader 的
 - Follower 服务器）初始化连接时最长能忍受多少个心跳时间间隔数。当已经超过 10 个心跳的时间（也就是tickTime）长度后 Zookeeper 服务器还没有收到客户端的返回信息，那么表明这个客户端连接失败。总的时间长度就是5*2000=10秒。
 - syncLimit：这个配置项标识 Leader 与 Follower 之间发送消息，请求和应答时间长度，最长不能超过多少个 tickTime 的时间长度，总的时间长度就是 2*2000=4 秒
 - dataDir：顾名思义就是 Zookeeper 保存数据的目录，默认情况下，Zookeeper 将写数据的日志文件也保存在这个目录里。
@@ -185,7 +185,7 @@ clientPort对应如下：
 配置完成后依次启动：依次输入如下指令（以zookeeper_server_1为例）
 
 	gaoyang@master:cd /usr/local/SolrCloud/zookeeper_server_1/bin
-	gaoyang@master:/usr/local/SolrCloud/zookeeper_server_1/bin$ ./zkServer.sh 
+	gaoyang@master:/usr/local/SolrCloud/zookeeper_server_1/bin$ ./zkServer.sh
 	JMX enabled by default
 	Using config: /usr/local/SolrCloud/zookeeper_server_1/bin/../conf/zoo.cfg
 	Usage: ./zkServer.sh {start|start-foreground|stop|restart|status|upgrade|print-cmd}
@@ -210,7 +210,7 @@ clientPort对应如下：
 
 
 1、修改tomcat/bin/cataina.sh，在最上方加入
-	
+
 	JAVA_OPTS="-DzkHost=127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183"
 
 
@@ -225,18 +225,18 @@ clientPort对应如下：
 
 
 5、 SolrCloud是通过ZooKeeper集群来保证配置文件的变更及时同步到各个节点上，所以，需要将配置文件上传到ZooKeeper集群中：执行如下操作
-	
+
 	java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd upconfig -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 -confdir /usr/local/SolrCloud/solrConfig-files/ -confname myconf
 
 接下来把collection中的内容链接到zookeeper中的配置：
-	
+
 	java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd linkconfig -collection collection1 -confname myconf -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183  
 
 5、配置solr_home_1下的solr.xml（其余类推，solr_home_2修改为8081，solr_home_3修改为8082，solr_home_4修改为8083）
-	
+
 	<int name="hostPort">${jetty.port:8983}</int>
 
-将8983修改为8080 
+将8983修改为8080
 
 	<int name="hostPort">${jetty.port:8080}</int>
 
@@ -257,7 +257,7 @@ clientPort对应如下：
 
 创建Collection及初始Shard，可以通过REST接口来创建Collection
 
-curl 'http://127.0.0.1:8080/solr/admin/collections?action=CREATE&name=mycollection&numShards=2&replicationFactor=2' 
+curl 'http://127.0.0.1:8080/solr/admin/collections?action=CREATE&name=mycollection&numShards=2&replicationFactor=2'
 
 也可在浏览器中直接输入，效果是一样的
 
@@ -266,16 +266,3 @@ curl 'http://127.0.0.1:8080/solr/admin/collections?action=CREATE&name=mycollecti
 - replicationFactor  是每个分片的备份数
 
 至此，一个简单的solrcloud集群就搭建完毕了。
-
-
-
-
-
-
-
-
-
-
-
-
-
