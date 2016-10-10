@@ -2,7 +2,7 @@
 layout: post
 title: 优美的编辑器Github Atom
 category: 工具
-tags: Atom
+tags: Atom 编辑器 前端
 description:
 ---
 
