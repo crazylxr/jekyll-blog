@@ -2,10 +2,9 @@
 layout: post
 title: 优美的编辑器Github Atom
 category: 工具
-tags: Atom 编辑器 前端
+tags: Atom
 description:一款优秀的编译器的介绍
 ---
-
 
 > 一款优秀的编译器的介绍
 
