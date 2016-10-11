@@ -30,8 +30,8 @@ url: http://crazylxr.github.io/
 rss_url: /feed.xml
 
 # gavatar头像及Favicon
-gavatar : /assets/img/1.png
-favicon : /assets/img/me.png
+gavatar : /assets/img/me.png
+favicon : /assets/img/1.png
 
 # disqus 设置
 #disqus:
