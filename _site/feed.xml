@@ -6,311 +6,260 @@
     <description>一不小心迈入计算机行业，在程序猿的道路上艰难地前行，目标是成 为一名优秀的全栈工程师或者说资深码农。对很多东西都充满兴趣， 跑步游泳，近期目标是能跑半程马拉松，学会自由泳。</description>
     
       <item>
+        <title>搜索引擎高级使用方法</title>
+        <link>http://crazylxr.github.io//2016/10/15/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</link>
+        <guid isPermaLink="true">http://crazylxr.github.io//2016/10/15/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</guid>
+        <pubDate>Sat, 15 Oct 2016 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;也许你想搜索一个东西，只会把关键字输进去，有时得到很多你并不需要的。导致你寻找一篇你要的就很难，我这里简单介绍一点搜索的方法。加快你搜索东西的效率，毕竟时间就是金钱。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;常用筛选工具：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;intitle:keyword  e.g intitle:”萧然自我”&lt;/strong&gt; （网页标题通常是对网页内容提纲挈领式的归纳。把查询内容范围限定在网页标题中，有时能获得良好的效果。上面那个例子可以进搜到我的blog，如果标题之间有空格，就打上引号，没得就可以不打，所以为了方便都打上把，反正也费不了什么事，这个title其实就是html head里面的那个title，程序员都懂的，不懂的右键网页，查看源代码，有个title标签就是啦。）&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;inurl:keyword  e.g inurl:”从0开始学习github系列.html”&lt;/strong&gt;（把搜索范围限定在[url]url链接中，用这句就可以搜索到我的这篇博文）&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;filetype:keyword&lt;/strong&gt;  （文件类型  filetype:pdf java,即可搜索到关于java的pdf资料，主要用于搜索资料的）&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;size:keyword&lt;/strong&gt;    e.g site:oschina.net title:python（搜索oschina.net 里面关于Python的文章）&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;常用服务工具&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;日常生活&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;天气/时间：weather/time/sunrise/sundown 城市名&lt;/strong&gt; e.g weather:chongqing&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;汇率:货币 in 货币2&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;倒数计时器：set timer 数字 seconds/minutes/hours&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;行程/航班:城市一 to 城市二    + train&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;自己的ip: what’s my ip&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;学术应用&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;计时器:eg：2016+2016^2&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;化学物质:eg:H2CO3&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;GDP/GNP查询:国名 gdp/gnp&lt;/strong&gt;  e.g gdp:china //查中国的gdp&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;回执函数图像: graph for 函数式&lt;/strong&gt; e.g graph for sin(x^2)+cos(y^2) 这个挺好玩的，可以多尝试&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>优美的编辑器Github Atom</title>
+        <link>http://crazylxr.github.io//2016/10/10/%E4%BC%98%E7%BE%8E%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8github_atom.html</link>
+        <guid isPermaLink="true">http://crazylxr.github.io//2016/10/10/%E4%BC%98%E7%BE%8E%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8github_atom.html</guid>
+        <pubDate>Mon, 10 Oct 2016 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;在代码编辑器、文本编辑器领域，有着不少的「神器」级的产品.然而，作为目前全球范围内影响力最大的代码仓库/开源社区，GitHub 的程序员们并不满足于此。他们使用目前最先进流行的技术重新打造了一款称为“属于21世纪”的代码编辑器——Atom， 它开源免费跨平台，并且整合 GIT 并提供类似 SublimeText 的包管理功能，支持插件扩展，可配置性非常高……&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;#优美的编辑器Github Atom&lt;/p&gt;
+
+&lt;p&gt;在学习前端的时候总想找一款优秀的编译器，从开始的&lt;code&gt;myeclipse&lt;/code&gt;，到&lt;code&gt;intellj idea&lt;/code&gt;就感觉有了很大的变化，后来听说，&lt;code&gt;sublime text&lt;/code&gt;特别的好用，前端大神都在用，不过正准备用的时候，突然寻找到了这款优美的编辑器&lt;code&gt;Atom&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;作为一款跨平台的编辑软件，安装和使用都是十分的方便，今天这篇给刚刚接触&lt;code&gt;Atom&lt;/code&gt;的同学带来一些常用的插件，你会发现，原来&lt;code&gt;Atom&lt;/code&gt;这么多美丽
+##插件篇
+&lt;strong&gt;atom-beautify:&lt;/strong&gt;这是个美化代码的插件，几乎可以支持所有主流的语言。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;autocomplete-paths:&lt;/strong&gt;常用IDE的同学会常常在引入图片或者文件的同时，发现只要输入.名称的时候就会自动显示出文件夹中的位置，非常的实用，强烈推荐。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;autoprefixer:&lt;/strong&gt;在写css的时候有时会忘了添加兼容性前缀，例如-webkit-等内容，这个插件会自动帮你添加。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;color-picker:&lt;/strong&gt;常常同学们为了把颜色调得非常的漂亮，需要差颜色的rgb，十六进制数等，还要到网上去查到颜色之后再来选去，这就是一个完整的取色器，妈妈再也不用担心找颜色麻烦了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;docblockr:&lt;/strong&gt;好的代码不仅是让自己读懂，还要让应该读懂的人都能读懂，常常发现那些大神，不仅代码写得6，注释也是非常的认真。有了这个插件，仅需一个tab键可以写出一样专业的注释！&lt;strong&gt;推荐&lt;/strong&gt;！&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;emmet:&lt;/strong&gt;怎么说呢，就是一个html／css代码快速编写神奇，用过sublime text的人都知道。可以写一部分代码，一个tab久搞定，用法太多，自己去熟悉。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;file-icons:&lt;/strong&gt;在每一个文件前面加一个漂亮的图标&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;grunt-runner:&lt;/strong&gt;直接在编辑器里面操作你的grunt人物。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;linter:&lt;/strong&gt;你在担心你写的代码不够专业吗？这个插件会自动提示代码中不规范的地方，如果你希望更完整的提示，可以尝试更加详细的系列，例如liter-jshint&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;git-plus:&lt;/strong&gt;这个就是在Atom里面实用git，方便使用windows同学。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;markdown-format,markdown-writer:&lt;/strong&gt;如果喜欢用markdown来写东西的话，那么你一定会爱上在Atom上写markdown的感觉～ ～&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;minimap:&lt;/strong&gt;用过sublime text的同学一定知道右边那方便的缩略图，这么好用的工具Atom上肯定也是有的，为什么要用插件呢？这就是Atom的强大之处，因为这个插件可以继续安装插件！你会发现一个强大的缩！略！图！&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;package&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;minimap-codeglance&lt;/td&gt;
+      &lt;td&gt;用过webstrom的同学都会记得有个代码放大镜的功能，这个插件就会让你鼠标移动到缩略图赏到时候放大显示那边部分的代码&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;minimap-git-diff&lt;/td&gt;
+      &lt;td&gt;通过这个插件，每当你修改你的代码的时候你就会在缩略图上看到和之前git中的区别&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;minimap-find-and-replace&lt;/td&gt;
+      &lt;td&gt;当你想替换单词的时候你会想起ctrl+D，可以你知道全篇有多少你要替换的字符串吗？通过这个插件你就可以在缩略图上看到所有你选中的字符串&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;minimap-highlight-selected&lt;/td&gt;
+      &lt;td&gt;当你选中部分代码的时候，它就会高亮的出现在缩略图中&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;minimap-linter&lt;/td&gt;
+      &lt;td&gt;这个插件让你的缩略图显示的更加漂亮和完整&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;apm install&lt;/td&gt;
+      &lt;td&gt;说了这么多，我们如何给缩略图安装插件呢？通过这个命令就可以在命令行中下载安装你需要的缩略图插件了&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;project-manager:&lt;/strong&gt;管理Atom中所有的项目&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;javasrcipt-snippets:&lt;/strong&gt;不要以为只有html才有Emmet，那你就太年轻了，这个插件会告诉你javascrpt也有Emmet一样的插件！只需要输入几个字母，一个tab就让你完成了一长串的代码！！&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;expose:&lt;/strong&gt;当你一次性打开多个文件的时候也许你会使用分屏来查看，但是我相信你的屏幕不会大到让你无限的分屏，那么就需要在多个文件中切换，或者是查看多个文件，那么你可以点击最上边的标签，那有没有更方便的呢？有的！！那就是这个插件，shift+atl+e，&lt;/p&gt;
+
+&lt;p&gt;就问你！美！不！美！&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;vim-mode：&lt;/strong&gt;如果你是个忠诚的vim党，我相信这个插件你一定会喜欢的！&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>增加学习正反馈的4大方法</title>
+        <link>http://crazylxr.github.io//2016/10/06/%E5%A2%9E%E5%8A%A0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%8F%8D%E9%A6%88%E7%9A%844%E5%A4%A7%E6%96%B9%E6%B3%95.html</link>
+        <guid isPermaLink="true">http://crazylxr.github.io//2016/10/06/%E5%A2%9E%E5%8A%A0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%8F%8D%E9%A6%88%E7%9A%844%E5%A4%A7%E6%96%B9%E6%B3%95.html</guid>
+        <pubDate>Thu, 06 Oct 2016 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;作为一个程序员，天天坐在电脑前敲代码是一件很苦逼的事情，然而项目又特别的忙，周末又想放松。所以学习是令人苦恼的事情，想学，但是没时间、没动力。那么我们今天就分享一下增加学习正反馈的4大方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;前言&lt;/p&gt;
+
+&lt;p&gt;作为一个程序员，天天坐在电脑前敲代码是一件很苦逼的事情，然而项目又特别的忙，周末又想放松。所以
+  学习是令人苦恼的事情，想学，但是没时间、没动力。那么我们今天就分享&lt;strong&gt;@沈晓马&lt;/strong&gt; 一下增加学习正反馈的4大方法。&lt;/p&gt;
+
+&lt;p&gt;正文从这里开始~&lt;/p&gt;
+
+&lt;p&gt;为了能涨工资，你学了1小时的技能，老板帮你涨了500元，又学了1小时的技能，老板又帮你涨了500元。如果是这样，你还会不积极去学技能吗？这就是正反馈的力量。可现实是，正反馈不会来得这么快，结果很多人并不会意识到要坚持去多学点知识。&lt;/p&gt;
+
+&lt;p&gt;所以，如何在学习时让正反馈来得更快、更多，就显得很有必要。这里我总结了增加学习正反馈的4大方法，因为都是以顺应人类的本能为出发点，所以可操作性会比较好一点。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;方法一：切分目标&lt;/h2&gt;
+&lt;p&gt;如果你有一个目标是背诵完一本英语词典，那么不能等到全部背诵完再来检验背诵成果，而是可以把这个目标更加细分，比如一次背10个单词，背完就默写，如果全部通过，那说明你背出了这10个单词，这是有成果的，而且是真实存在的。有些人每次都背了些，今天心情好就多背一点，心情不好就少背一点，背完就扔一边，也不知道到底有没有背出，这种感觉不深刻其实是相当于没有持续正反馈的。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;方法二：明确意义&lt;/h2&gt;
+&lt;p&gt;如果你深深喜欢上了一个女孩子，想要约会，可是通过打听了解后发现，对方喜欢身材匀称、穿着时尚、有古典文学素养的男生，可以你却很巧妙地避开了她所有的要求。这时候你需要花3个月的时间改变自己，让自己往对方喜欢的类型上靠：去健身房锻炼身体，去逛商场挑选衣服，去买书恶补文学。在这过程中，可能出现的状况是，健身几天发现坚持不了，太痛苦；根本没有逛商场的习惯，怎么挑都挑不到适合的衣服，太痛苦；看书看不进，什么莫奈梵高，看都看不懂，太痛苦……但是，如果你明确做这些事情的目的是什么，就会很有动力。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;方法三：自我奖励&lt;/h2&gt;
+&lt;p&gt;没有机会创造机会，没有正反馈就创造正反馈。所以，自我奖励就属于自己创造正反馈。每完成一个目标就尽快给自己一个奖励，让自己的内心得到满足，产生成就感，继而有动力去执行下一个目标。举我自己的一个例子，为了督促自己跑步，我要求自己跑满50公里就给自己一个奖励——kindle，然后每个星期我都会跑两次，每次跑3至5公里，最后达到自己设定的目标后就买了一个日版的 kindle paperwhite 2，很喜欢，现在一直拿它在看书。还有其它的，比如给自己换一个羽毛球包、买一个iPad，基本都是以自我奖励的形式获得。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;方法四：他人奖励&lt;/h2&gt;
+&lt;p&gt;这种奖励和上面的「自我奖励」相对应，不过这种奖励既可以是物质上的奖励，也可以是精神上的奖励。物质上的奖励，大家最熟悉的就是父母在我们小时候对我们提出的「无理」要求的妥协——你把作业做好我就带你出去玩儿。长大之后这样的他人对象一般包括伴侣、上司等等。精神上的奖励，通俗来说就是精神上的鼓励，可以是任何人。我们每个个体在这社会上其实都希望得到尊重，得到支持，得到表扬。所以你们会看到很多歌手在演唱会上情到浓处会一边落泪一边哽咽着说：「如果没有各位粉丝的支持，我是不会走到今天的。」他人对自己的鼓励会产生很大的正反馈，有时候这种正反馈的能量要远远高于物质上的正反馈。就拿学习PPT这件事来说，如果当时我做出的PPT作品没有得到大家的赞同支持，我也不会一直做PPT作品，正因为当时在微博上很多人的点赞，让我有了动力去设计下个作品，我想做得更好，然后发给大家看，看看是不是比之前的要进步一点。就是这样，一步一步走到今天，如果没有微博上网友的正反馈，我想一般也不会有人傻乎乎地一直做PPT吧。&lt;/p&gt;
+
+&lt;p&gt;上面四种方法，大家可以根据自己的情况选择一二，然后坚持尝试一段时间，应该对大家会有些许帮助。&lt;/p&gt;
+
+&lt;p&gt;最后
+这种很合适“逼”自己做事，然后犒赏自己的。是什么动力让你每天早起，让你坚持看书，让你坚持背单词。&lt;/p&gt;
+
+&lt;p&gt;关于本文
+作者：@沈晓马
+原文：http://www.jianshu.com/p/b97cd954c626&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>前端SEO</title>
+        <link>http://crazylxr.github.io//2016/09/11/%E5%89%8D%E7%AB%AFSEO.html</link>
+        <guid isPermaLink="true">http://crazylxr.github.io//2016/09/11/%E5%89%8D%E7%AB%AFSEO.html</guid>
+        <pubDate>Sun, 11 Sep 2016 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;SEO不仅后端来，前端其实也是可以的！我这里介绍一点简单的&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;seo&quot;&gt;SEO&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;	*控制首页链接数量（一百个链接以内，太少了也不行）
+	*扁平化的目录层次（三层以内），
+	*导航SEO优化（尽量采用文字，如果用图片，一定要加alt）【面包屑导航（慕课网问答，左上角标题，随时可以返回上一页）】
+			让用户了解当前所处位置
+			使用户可以了解网站组织形式
+	*不可忽略的细节
+		分页（
+			-首页1 2 3 4 5 6 7 8 9 10 下一页
+			-首页1 2 3 4 5 6 7 8 9 10 下拉选择
+		）
+		一个页面不可超过100k
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;页面代码优化&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;	*&amp;lt;title&amp;gt;标题
+	*&amp;lt;meta keywords&amp;gt;关键词
+	*&amp;lt;meta description&amp;gt;网页描述  （都不可把关键词堆太多）
+	*语义化代码
+		- H1-H6标签多用于标题
+		- UL标签多用于无序列表
+		- OL多用于有序列表
+		- DL用于定义数据列表
+		- em strong 强调
+		- &amp;lt;a&amp;gt;标签 加title 和rel
+		- &amp;lt;h1&amp;gt;标签  （小蜘蛛，最重视）
+		- &amp;lt;p&amp;gt;标签 &amp;lt;br&amp;gt;标签（只用于文本之间） br标签用在p之间&amp;lt;p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;p/&amp;gt;&amp;lt;p/&amp;gt;
+		- 用表格 一定要加caption
+		- &amp;lt;img&amp;gt; 标签应使用alt使用
+		- &amp;lt;strong&amp;gt;(权重最高)&amp;lt;em&amp;gt; 与 &amp;lt;b&amp;gt;&amp;lt;i&amp;gt;（权重仅次于strong）
+		- 重要内容HTML代码放在最前面
+		- 重要内容不要用js输出（小蜘蛛不认识）
+		- 少使用iframe框架
+		- 谨慎使用display：none （小蜘蛛会过滤）
+		- 不断精简代码
+		- 建议不适用nbsp，用margin或者缩进来代替
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      </item>
+    
+      <item>
         <title>从0开始学习GitHub系列</title>
         <link>http://crazylxr.github.io//2016/09/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0github%E7%B3%BB%E5%88%97.html</link>
         <guid isPermaLink="true">http://crazylxr.github.io//2016/09/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0github%E7%B3%BB%E5%88%97.html</guid>
         <pubDate>Mon, 05 Sep 2016 00:00:00 +0800</pubDate>
-        <description>&lt;h1 id=&quot;github&quot;&gt;从0开始学习GitHub系列&lt;/h1&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;从0开始学习GitHub系列&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;github&quot;&gt;从0开始学习GitHub系列&lt;/h1&gt;
 
 &lt;h2 id=&quot;githubstormzhanggithttpwwwliaoxuefengcomwiki0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;现在github非常的流行，故我寻找了很多资料。这一篇也不是我写的，都是别人（stormzhang）写的，我整合成一篇的。另外一篇就是&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;廖雪峰的git教程&lt;/a&gt;也非常的有用，供大家参考。&lt;/h2&gt;
 
 &lt;h2 id=&quot;stromzhang&quot;&gt;StromZhang教程参考：&lt;/h2&gt;
 
-&lt;h2 id=&quot;githubhttpmpweixinqqcomsbizmjm5mda2mti1mamid2649083575idx2sncab7249d132f43b9e61b9569c26e759cscene23srcid0624jkhib7vcv3izsdbuwdcird&quot;&gt;1.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083575&amp;amp;idx=2&amp;amp;sn=cab7249d132f43b9e61b9569c26e759c&amp;amp;scene=23&amp;amp;srcid=0624jKhib7vCV3izSdbuwDci#rd&quot;&gt;初始GitHub&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;2.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083575&amp;amp;idx=3&amp;amp;sn=472e8bdab763736f4bc9ab191a7dba4e&amp;amp;scene=23&amp;amp;srcid=062414dwhZQl0rFBGcoXAypd#rd&quot;&gt;加入GitHub&lt;/a&gt;
-—
-3.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083589&amp;amp;idx=1&amp;amp;sn=17844e55ca2682895ab18f480d0747bc&amp;amp;scene=23&amp;amp;srcid=0624pzEcEjN3Rs6SJyHlwWrn#rd&quot;&gt;Git速成&lt;/a&gt;
-—
-4.&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083597&amp;amp;idx=1&amp;amp;sn=8ccbd355c9084a41c3e99ca81ca7be49&amp;amp;scene=0&amp;amp;key=77421cf58af4a653d327b5a00183656c81c2b50b1482485bc4c4400f0dcc82a6e8bcec8b6022b92027432506801050f9&amp;amp;ascene=7&amp;amp;uin=Mzk2Mjc2MTU1&amp;amp;devicetype=iPhone+OS9.3.2&amp;amp;version=16031510&amp;amp;nettype=3G+&amp;amp;fontScale=100&amp;amp;pass_ticket=A3HVEI86duQTQiqE0dorQN9Bk2VAbajx82U1IJWPPglZfUrVfBTRiJtXDElWloBx&quot;&gt;向GitHub提交代码&lt;/a&gt;
-—
-5.&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083608&amp;amp;idx=1&amp;amp;sn=cd6a7fac541cf48f8302000155c37c64&amp;amp;scene=0&amp;amp;key=77421cf58af4a653c44d13ddd26883e9d7f4ecbfa57ca5d5e9b03315f7d58fb8f1fb5f259909a3c70050a5c9960c7147&amp;amp;ascene=7&amp;amp;uin=Mzk2Mjc2MTU1&amp;amp;devicetype=iPhone+OS9.3.2&amp;amp;version=16031510&amp;amp;nettype=3G+&amp;amp;fontScale=100&amp;amp;pass_ticket=A3HVEI86duQTQiqE0dorQN9Bk2VAbajx82U1IJWPPglZfUrVfBTRiJtXDElWloBx&quot;&gt;Git进阶&lt;/a&gt;
-—&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>SolrCloud的单机伪分布式环境搭建</title>
-        <link>http://crazylxr.github.io//2015/04/18/solr-SolrCloud.html</link>
-        <guid isPermaLink="true">http://crazylxr.github.io//2015/04/18/solr-SolrCloud.html</guid>
-        <pubDate>Sat, 18 Apr 2015 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;在项目中，我主要负责Solr这一块，为了便于在单机上进行调试，今天在我的电脑上搭建一个SolrCloud单机伪分布式环境。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;1.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083575&amp;amp;idx=2&amp;amp;sn=cab7249d132f43b9e61b9569c26e759c&amp;amp;scene=23&amp;amp;srcid=0624jKhib7vCV3izSdbuwDci#rd&quot;&gt;初始GitHub&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;section&quot;&gt;用到的软件&lt;/h2&gt;
+&lt;p&gt;2.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083575&amp;amp;idx=3&amp;amp;sn=472e8bdab763736f4bc9ab191a7dba4e&amp;amp;scene=23&amp;amp;srcid=062414dwhZQl0rFBGcoXAypd#rd&quot;&gt;加入GitHub&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;本文中是根据如下软件搭建的。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;3.&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083589&amp;amp;idx=1&amp;amp;sn=17844e55ca2682895ab18f480d0747bc&amp;amp;scene=23&amp;amp;srcid=0624pzEcEjN3Rs6SJyHlwWrn#rd&quot;&gt;Git速成&lt;/a&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;apache-tomcat-8.0.14.tar.gz&lt;/li&gt;
-  &lt;li&gt;solr-4.10.1.zip&lt;/li&gt;
-  &lt;li&gt;zookeeper-3.4.6.tar.gz&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;4.&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083597&amp;amp;idx=1&amp;amp;sn=8ccbd355c9084a41c3e99ca81ca7be49&amp;amp;scene=0&amp;amp;key=77421cf58af4a653d327b5a00183656c81c2b50b1482485bc4c4400f0dcc82a6e8bcec8b6022b92027432506801050f9&amp;amp;ascene=7&amp;amp;uin=Mzk2Mjc2MTU1&amp;amp;devicetype=iPhone+OS9.3.2&amp;amp;version=16031510&amp;amp;nettype=3G+&amp;amp;fontScale=100&amp;amp;pass_ticket=A3HVEI86duQTQiqE0dorQN9Bk2VAbajx82U1IJWPPglZfUrVfBTRiJtXDElWloBx&quot;&gt;向GitHub提交代码&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;网盘下载地址 &lt;a href=&quot;http://pan.baidu.com/s/1dDB4mop&quot;&gt;点这里&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;搭建过程&lt;/h2&gt;
-
-&lt;p&gt;在/usr/local下新建目录 SolrCloud&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mkdir SolrCloud
-cd SolrCloud
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;tomcat&quot;&gt;多tomcat&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;由于是用不同的端口号模拟不同的机器，因此需要多个tomcat&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;将apache-tomcat-8.0.14.tar.gz拷贝到SolrCloud目录下，并解压&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar zxvf apache-tomcat-8.0.14.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;重命名为 tomcat_server_8080&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mv apache-tomcat-8.0.14 tomcat_server_8080
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;把 tomcat_server_8080复制三份，分别命名为tomcat_server_8081、tomcat_server_8082、tomcat_server_8083，后面的8080，8081，8082，8083是我准备用的tomcat的端口号。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cp -r tomcat_server_8080 tomcat_server_8081
-cp -r tomcat_server_8080 tomcat_server_8082
-cp -r tomcat_server_8080 tomcat_server_8083
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;配置端口：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    tomcat           http端口   https端口   关闭指令端口   Ajp端口
-tomcat_server_8080	  8080        8443        8005         8009
-tomcat_server_8081	  8081        8444        8006         8010
-tomcat_server_8082	  8082        8445        8007         8011
-tomcat_server_8083	  8083        8446        8008         8012
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;修改 tomcat-server_*/conf/server.xml 进行配置，以tomcat_server_8080/conf/server.xml为例，其它按照此配置进行配置即可。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;Server port=&quot;8005&quot; shutdown=&quot;SHUTDOWN&quot;&amp;gt;  //接受服务器关闭指令的端口号，关闭指令端口.
-
-
-&amp;lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;
-
-  connectionTimeout=&quot;20000&quot;
-
-  redirectPort=&quot;8443&quot; /&amp;gt;
-//http请求处理端口，我们在网页上输入的普通url地址包含的端口就是他 .这个端口叫http端口.
-
-
-&amp;lt;Connector port=&quot;8009&quot; protocol=&quot;AJP/1.3&quot; redirectPort=&quot;8443&quot; /&amp;gt;
-
-//接收AJP协议的处理端口.这个端口叫ajp端口.
-
-redirectPort=&quot;8443&quot; //https请求的处理端口.这个端口叫https端口.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;solrhome&quot;&gt;多solrhome&lt;/h3&gt;
-
-&lt;p&gt;将 solr-4.10.1.zip 拷贝到SolrCloud目录下，并解压&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;unzip solr-4.10.1.zip
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;将 solr-4.10.1 中/example/solr 拷贝到SolrCloud目录下，并重命名为solr_home_1&lt;/p&gt;
-
-&lt;p&gt;把solr_home_1复制三份，分别命名为 solr_home_2、solr_home_3、solr_home_4&lt;/p&gt;
-
-&lt;p&gt;此时SolrCloud下文件形式如下：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_1
-drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:11 solr_home_2
-drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_3
-drwxr-xr-x  4 gaoyang gaoyang      4096 Apr 18 10:12 solr_home_4
-drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 09:59 tomcat_server_8080
-drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8081
-drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8082
-drwxr-xr-x  9 gaoyang gaoyang      4096 Apr 18 10:04 tomcat_server_8083
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;把solr-4.10.1/example/webapps/solr.war复制到tomcat-server_*（8080-8083）/webapps目录下。&lt;/p&gt;
-
-&lt;p&gt;1、配置 solrhome:&lt;/p&gt;
-
-&lt;p&gt;在tomcat-server_*（8080-8083）/conf/Catalina/localhost 下创建文件solr.xml，并填入以下内容：（以tomcat-server_8080为例，其余类推）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&amp;gt;
-&amp;lt;Context docBase=&quot;/usr/local/SolrCloud/tomcat_server_8080/webapps/solr.war&quot; debug=&quot;0&quot; crossContext=&quot;true&quot; &amp;gt;
-  &amp;lt;Environment name=&quot;solr/home&quot; type=&quot;java.lang.String&quot; value=&quot;/usr/local/SolrCloud/solr_home_1&quot; override=&quot;true&quot; /&amp;gt;
-&amp;lt;/Context&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;2、配置datadir:&lt;/p&gt;
-
-&lt;p&gt;以solr_home_1为例，其余类推。&lt;/p&gt;
-
-&lt;p&gt;首先在solr_home_1下创建data文件夹。此data就是存储索引的文件夹。&lt;/p&gt;
-
-&lt;p&gt;编辑 /usr/local/SolrCloud/solr_home_1/collection1/conf/solrconfig.xml 中的 dataDir 配置项。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;dataDir&amp;gt;${solr.data.dir:/usr/local/SolrCloud/solr_home_1/data}&amp;lt;/dataDir&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;3、将solr-4.10.1/example/lib/ext下的jar包放到tomcat-server_*（8080-8083）/webapps/solr/WEB-INF/lib下。&lt;/p&gt;
-
-&lt;p&gt;4、启动四个tomcat&lt;/p&gt;
-
-&lt;p&gt;tomcat-server_*（8080-8083）/bin下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./startup.sh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在浏览中中分别打开&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;http://localhost:8080/solr
-http://localhost:8081/solr
-http://localhost:8082/solr
-http://localhost:8083/solr
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果都能正常访问到solr的admin页面，那么说明配置是成功的。否则就需要检查哪里错了或者遗漏了。（这四个是独立的，此时没有cloud）&lt;/p&gt;
-
-&lt;h3 id=&quot;zookeeper&quot;&gt;zookeeper配置&lt;/h3&gt;
-
-&lt;p&gt;将 zookeeper-3.4.6.tar.gz 拷贝到SolrCloud目录下，解压&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar zxvf zookeeper-3.4.6.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;并重命名为 zookeeper_server_1,把 zookeeper_server_1复制两份，分别命名为zookeeper_server_2、zookeeper_server_3。（这类需要注意的是zookeeper必须配置为奇数个，否则在选举算法中无法选出leader）&lt;/p&gt;
-
-&lt;p&gt;在 /usr/local/SolrCloud/zookeeper_server_* 下建立文件夹data和logs
-（下面仅以zookeeper_server_1为例，其余类推）&lt;/p&gt;
-
-&lt;p&gt;1、将zookeeper_server_1/conf下zoo_sample.cfg文件名改为zoo.cfg 并修改zoo.cfg文件.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tickTime=2000
-initLimit=10
-syncLimit=5
-dataDir=/usr/local/SolrCloud/zookeeper_server_1/data
-dataLogDir=/usr/local/SolrCloud/zookeeper_server_1/logs
-clientPort=2181
-
-server.1=127.0.0.1:2888:3888
-server.2=127.0.0.1:2889:3889
-server.3=127.0.0.1:2890:3890
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在 /usr/local/SolrCloud/zookeeper_server_1 下&lt;/p&gt;
-
-&lt;p&gt;clientPort对应如下：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;zookeeper_server_1      2181
-zookeeper_server_2      2182
-zookeeper_server_3      2183
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;tickTime：这个时间是作为 Zookeeper 服务器之间或客户端与服务器之间维持心跳的时间间隔，也就是每个 tickTime 时间就会发送一个心跳。&lt;/li&gt;
-  &lt;li&gt;initLimit：这个配置项是用来配置 Zookeeper 接受客户端（这里所说的客户端不是用户连接 Zookeeper 服务器的客户端，而是 Zookeeper服务器集群中连接到 Leader 的&lt;/li&gt;
-  &lt;li&gt;Follower 服务器）初始化连接时最长能忍受多少个心跳时间间隔数。当已经超过 10 个心跳的时间（也就是tickTime）长度后 Zookeeper 服务器还没有收到客户端的返回信息，那么表明这个客户端连接失败。总的时间长度就是5*2000=10秒。&lt;/li&gt;
-  &lt;li&gt;syncLimit：这个配置项标识 Leader 与 Follower 之间发送消息，请求和应答时间长度，最长不能超过多少个 tickTime 的时间长度，总的时间长度就是 2*2000=4 秒&lt;/li&gt;
-  &lt;li&gt;dataDir：顾名思义就是 Zookeeper 保存数据的目录，默认情况下，Zookeeper 将写数据的日志文件也保存在这个目录里。&lt;/li&gt;
-  &lt;li&gt;dataLogDir： Zookeeper的日志文件位置。&lt;/li&gt;
-  &lt;li&gt;server.A=B：C：D：其中 A 是一个数字，表示这个是第几号服务器；B是这个服务器的 ip 地址；C 表示的是这个服务器与集群中的 Leader服务器交换信息的端口；D 表示的是万一集群中的 Leader 服务器挂了，需要一个端口来重新进行选举，选出一个新的 Leader，而这个端口就是用来执行选举时服务器相互通信的端口。如果是伪集群的配置方式，由于 B 都是一样，所以不同的 Zookeeper 实例通信端口号不能一样，所以要给它们分配不同的端口号。&lt;/li&gt;
-  &lt;li&gt;clientPort：这个端口就是客户端连接 Zookeeper 服务器的端口，Zookeeper 会监听这个端口，接受客户端的访问请求。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;在三个data目录下的新建myid文件（没有后缀），修改其中的内容。zookeeper_server_1是1， zookeeper_server_2是2，zookeeper_server_3是3 。只有一行。&lt;/p&gt;
-
-&lt;p&gt;配置完成后依次启动：依次输入如下指令（以zookeeper_server_1为例）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gaoyang@master:cd /usr/local/SolrCloud/zookeeper_server_1/bin
-gaoyang@master:/usr/local/SolrCloud/zookeeper_server_1/bin$ ./zkServer.sh 
-JMX enabled by default
-Using config: /usr/local/SolrCloud/zookeeper_server_1/bin/../conf/zoo.cfg
-Usage: ./zkServer.sh {start|start-foreground|stop|restart|status|upgrade|print-cmd}
-gaoyang@master:/usr/local/SolrCloud/zookeeper_server_2/bin$ ./zkServer.sh start
-JMX enabled by default
-Using config: /usr/local/SolrCloud/zookeeper_server_2/bin/../conf/zoo.cfg
-Starting zookeeper ... STARTED
-gaoyang@master:/usr/local/SolrCloud/zookeeper_server_2/bin$ ./zkServer.sh status
-JMX enabled by default
-Using config: /usr/local/SolrCloud/zookeeper_server_2/bin/../conf/zoo.cfg
-Mode: leader
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;可以看到zookeeper_server_1被选为leader 其它两个为follower。&lt;/p&gt;
-
-&lt;p&gt;另外，可以通过客户端脚本，连接到ZooKeeper集群上。对于客户端来说，ZooKeeper是一个整体（ensemble），
-连接到ZooKeeper集群实际上感觉在独享整个集群的服务，所以，你可以在任何一个结点上建立到服务集群的连接。&lt;/p&gt;
-
-&lt;h2 id=&quot;tomcatsolrzookeeper&quot;&gt;Tomcat+solr+zookeeper集群&lt;/h2&gt;
-
-&lt;p&gt;以上都没问题之后，需要把tomcat+solr+zookeeper集成起来。&lt;/p&gt;
-
-&lt;p&gt;1、修改tomcat/bin/cataina.sh，在最上方加入&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;JAVA_OPTS=&quot;-DzkHost=127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;加入以上内容其实就是指明了zookeeper集群所在位置。&lt;/p&gt;
-
-&lt;p&gt;2、 在/usr/local/SolrCloud目录下创建 solrConfig-files目录和solrLib-Files目录。&lt;/p&gt;
-
-&lt;p&gt;3、 在/usr/local/SolrCloud/solrConfig-files目录下放置solr-4.10.1/example/solr/collection1/conf 下的所有文件。&lt;/p&gt;
-
-&lt;p&gt;4、 在目录/usr/local/SolrCloud/solrLib-Files目录下放置tomcat_server_1/webapps/solr/WEB-INF/lib下的所有jar包。&lt;/p&gt;
-
-&lt;p&gt;5、 SolrCloud是通过ZooKeeper集群来保证配置文件的变更及时同步到各个节点上，所以，需要将配置文件上传到ZooKeeper集群中：执行如下操作&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd upconfig -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 -confdir /usr/local/SolrCloud/solrConfig-files/ -confname myconf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;接下来把collection中的内容链接到zookeeper中的配置：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;java -classpath .:/usr/local/SolrCloud/solrLib-Files/* org.apache.solr.cloud.ZkCLI -cmd linkconfig -collection collection1 -confname myconf -zkhost 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;5、配置solr_home_1下的solr.xml（其余类推，solr_home_2修改为8081，solr_home_3修改为8082，solr_home_4修改为8083）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;int name=&quot;hostPort&quot;&amp;gt;${jetty.port:8983}&amp;lt;/int&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;将8983修改为8080&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;int name=&quot;hostPort&quot;&amp;gt;${jetty.port:8080}&amp;lt;/int&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;6、依次启动三个zookeeper_server和四个tomcat_server&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;http://localhost:8080/solr/#/~cloud
-http://localhost:8081/solr/#/~cloud
-http://localhost:8082/solr/#/~cloud
-http://localhost:8083/solr/#/~cloud
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;得到的页面都是一样的。一个collection有一个分片，这个分片有四个备份。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blogimg/SolrCloud.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;collectionshardreplication&quot;&gt;创建Collection、Shard和Replication&lt;/h2&gt;
-
-&lt;p&gt;创建Collection及初始Shard，可以通过REST接口来创建Collection&lt;/p&gt;
-
-&lt;p&gt;curl ‘http://127.0.0.1:8080/solr/admin/collections?action=CREATE&amp;amp;name=mycollection&amp;amp;numShards=2&amp;amp;replicationFactor=2’&lt;/p&gt;
-
-&lt;p&gt;也可在浏览器中直接输入，效果是一样的&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;name 就是	collection的名字&lt;/li&gt;
-  &lt;li&gt;numShards 是分片的个数&lt;/li&gt;
-  &lt;li&gt;replicationFactor  是每个分片的备份数&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;至此，一个简单的solrcloud集群就搭建完毕了。&lt;/p&gt;
-
+&lt;p&gt;5.&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649083608&amp;amp;idx=1&amp;amp;sn=cd6a7fac541cf48f8302000155c37c64&amp;amp;scene=0&amp;amp;key=77421cf58af4a653c44d13ddd26883e9d7f4ecbfa57ca5d5e9b03315f7d58fb8f1fb5f259909a3c70050a5c9960c7147&amp;amp;ascene=7&amp;amp;uin=Mzk2Mjc2MTU1&amp;amp;devicetype=iPhone+OS9.3.2&amp;amp;version=16031510&amp;amp;nettype=3G+&amp;amp;fontScale=100&amp;amp;pass_ticket=A3HVEI86duQTQiqE0dorQN9Bk2VAbajx82U1IJWPPglZfUrVfBTRiJtXDElWloBx&quot;&gt;Git进阶&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
     
